@@ -1,0 +1,35 @@
+<p>BmiCalculator</p>
+<table>
+  <tr>
+    <td>Height</td>
+    <td> <input #heightTextBox type="text" (input)="setHeight(heightTextBox.value)" /> </td>
+  </tr>
+  <tr>
+    <td>Weight</td>
+    <td> <input type="text"/> </td>
+  </tr>
+  <tr>
+    <td>Age</td>
+    <td> <input type="number"/> </td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <input type="button" (click)="calculateBmi()" value="Calculate"/>
+    </td>
+    <td>
+      <input type="reset" />
+    </td>
+  </tr>
+</table>
+
+<p>Bmi Result</p>
+<output>{{bmiResult}}</output>
