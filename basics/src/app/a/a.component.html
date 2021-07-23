@@ -1,0 +1,8 @@
+<fieldset>
+  <legend>A Component View</legend>
+ <p> Message for B  <input type="text" [(ngModel)]="dataForChild" />
+  <b-comp [inputData]="dataForChild"
+          [parentComponentName]="myName"
+          (onDataChange)="onChildNotification($event)" ></b-comp>
+</fieldset>
+

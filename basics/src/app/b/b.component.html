@@ -1,0 +1,9 @@
+<fieldset>
+  <legend>B Component View</legend>
+  <c-comp></c-comp>
+  <d-comp></d-comp>
+  <output>{{inputData}}</output>
+  <output>{{parentComponentName}}</output>
+   <p>Enter Message For Parent : <input type="text" #textBox (input)="notifyParent(textBox.value)"/></p>
+
+</fieldset>
